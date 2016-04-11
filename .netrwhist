@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/worksp/xiaodong/code/doorbell'
+let g:netrw_dirhist_2='/worksp/xiaodong/mp805m_2.0/sd/rootfs/lib'
+let g:netrw_dirhist_3='/worksp/xiaodong/code/doorbell/framework/lib/vtd_util'
+let g:netrw_dirhist_4='/worksp/xiaodong/code/doorbell/platform'
+let g:netrw_dirhist_5='/worksp/xiaodong/code/ext_lib/alsa/alsa-utils-1.0.29/aplay'
+let g:netrw_dirhist_6='/root/kk/code/dvp/jni/task'
+let g:netrw_dirhist_7='/root/kk/code/dvp/jni/task/task_lock'
+let g:netrw_dirhist_8='/root/kk/code/dvp'
