@@ -23,16 +23,14 @@ endfunction
 "2. Install plugin:PluginInstall
 "=============================>>>
 if MySys() == "windows"
-set rtp+=$VIMFILES/bundle/vundle/
-call vundle#rc('$VIM/vimfiles/bundle/') 
+set rtp+=$VIM/vimfiles/bundle/Vundle.vim
+call vundle#begin('$VIM/vimfiles/bundle/') 
 elseif MySys() == "linux"
-"set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/Vundle.vim/
-"call vundle#rc()
+call vundle#begin()
 endif
 
 "Plugin 'gmarik/vundle'
-call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'neoComplcache'
