@@ -123,7 +123,7 @@ if has("multi_byte")
 
 " UTF-8 编码
 "set FileExplorer=utf-8,gbk
-set termencoding=utf-8,gb2312,gbk,gb18030 
+set termencoding=utf-8
 set formatoptions+=mM
 "set encoding=gbk "显示用的编码方式
 set encoding=utf-8"显示用的编码方式
