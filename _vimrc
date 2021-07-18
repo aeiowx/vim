@@ -23,8 +23,8 @@ endfunction
 "2. Install plugin:PluginInstall
 "=============================>>>
 if MySys() == "windows"
-set rtp+=$VIM/vimfiles/bundle/Vundle.vim
-call vundle#begin('$VIM/vimfiles/bundle/') 
+set rtp+=$USERPROFILE/.vim/bundle/Vundle.vim
+call vundle#begin('$USERPROFILE/.vim/bundle/') 
 elseif MySys() == "linux"
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
