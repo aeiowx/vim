@@ -209,6 +209,8 @@ set tags=tags; "自动定位tags文件"
 set autochdir
 filetype plugin indent on "new-omni-completion
 set completeopt=longest,menu
+"set systags
+set tags+=~/.vim/systags
  
 "wmmanager  
 let g:winManagerWindowLayout = "FileExplorer" "|TagList
