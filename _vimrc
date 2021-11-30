@@ -64,8 +64,8 @@ set shiftwidth=4 " 设定 << 和 >> 命令移动时的宽度为 4
 set softtabstop=4 " 使得按退格键时可以一次删掉 4 个空格
 set tabstop=4 " 设定 tab 长度为 4
 "设置空格替换tab"
-"set ts=4
-"set expandtab
+set ts=4
+set expandtab
 "set autoindent
 "set nobackup " 覆盖文件时不备份
 set autochdir " 自动切换当前目录为当前文件所在的目录
@@ -117,6 +117,7 @@ if has("win32") || has("win64")
 "set guifont=Inconsolata:h16:cANSI
 set guifont=Courier_new:h10
 endif
+
 
 " 配置多语言环境
 if has("multi_byte")
@@ -301,7 +302,10 @@ map <leader>da :DoxAuthor<CR>
 map <leader>df :Dox<CR>
 map <leader>db :DoxBlock<CR>
 map <leader>dc a /** */<LEFT><LEFT><LEFT>
-"单行注释
+"单行注释 in MacOS
+map ¬ $a<TAB>///< 
+map µ $a<TAB>// 
+"单行注释 in Linux & Win
 map <a-l> $a<TAB>///< 
 map <a-m> $a<TAB>// 
 
