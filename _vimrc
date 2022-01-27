@@ -43,6 +43,7 @@ Plugin 'a.vim'
 Plugin 'ctags.vim'
 Plugin 'matchit.zip'
 Plugin 'Markdown'
+Plugin 'rhysd/vim-clang-format'
 "Plugin 'tagbar'
 
 call vundle#end()
@@ -117,7 +118,6 @@ if has("win32") || has("win64")
 "set guifont=Inconsolata:h16:cANSI
 set guifont=Courier_new:h10
 endif
-
 
 " 配置多语言环境
 if has("multi_byte")
@@ -197,9 +197,9 @@ let b:javascript_fold=1
 " 打开javascript对dom、html和css的支持
 let javascript_enable_domhtmlcss=1
 " 设置字典 ~/.vim/dict/文件的路径
-autocmd filetype javascript set dictionary=$VIMFILES/dict/javascript.dict
-autocmd filetype css set dictionary=$VIMFILES/dict/css.dict
-autocmd filetype php set dictionary=$VIMFILES/dict/php.dict
+" autocmd filetype javascript set dictionary=$VIMFILES/dict/javascript.dict
+" autocmd filetype css set dictionary=$VIMFILES/dict/css.dict
+" autocmd filetype php set dictionary=$VIMFILES/dict/php.dict
 "<<<=============================================================
 
 "plugin ==========================================================>>>
@@ -559,3 +559,5 @@ endif
 "autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()  "如果是c语言的程序的话，tagbar自动开启
 "
 "<<<=====================================================================
+
+let g:clang_format#auto_format_on_insert_leave=1
